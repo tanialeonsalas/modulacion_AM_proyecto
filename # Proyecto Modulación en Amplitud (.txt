@@ -1,0 +1,56 @@
+# Proyecto: Modulación en Amplitud (AM) — Señales y Sistemas
+
+## Autor
+Tania León Salas
+
+## Descripción
+Este proyecto consiste en simular un **sistema de modulación en amplitud (AM)** usando Python/Colab.  
+Se analiza desde la **señal de mensaje y portadora**, pasando por **modulación AM**, hasta **demodulación y análisis de ruido/distorsión**.  
+El objetivo es entender el comportamiento de señales AM y su representación en el **dominio del tiempo y frecuencia**.
+
+## Contenido del proyecto
+El cuaderno está organizado en **7 bloques principales**:
+
+1. **Definición de librerías y señales**
+   - Importación de `numpy`, `matplotlib` y `scipy`
+   - Definición de señal de mensaje y portadora
+
+2. **Modulación AM**
+   - Señal modulada en amplitud: `modulated = (1 + m_t) * c_t`
+
+3. **Visualización de señales**
+   - Gráficas de la señal de mensaje, portadora y señal modulada
+   - Ajustes de estilo, colores y ejes para mejor comprensión
+
+4. **Análisis de frecuencia**
+   - Transformada de Fourier (FFT) de la señal modulada
+   - Visualización del espectro de frecuencias
+
+5. **Señal con ruido**
+   - Añadir ruido gaussiano
+   - Visualización de la señal ruidosa
+
+6. **Atenuación y distorsión (clipping)**
+   - Reducción de amplitud (factor de atenuación)
+   - Clipping simple para simular distorsión
+   - Análisis FFT de señales atenuadas y con clipping
+
+7. **Demodulación por detección de envolvente**
+   - Cálculo de la envolvente usando la transformada de Hilbert
+   - Recuperación de la señal de mensaje eliminando offset DC
+   - Visualización de la señal recuperada y su FFT
+
+## Cómo ejecutar
+1. Abrir el cuaderno `.ipynb` en Google Colab o Jupyter Notebook.
+2. Ejecutar las celdas **en orden** (bloques 1 a 7).
+3. Observar los gráficos y resultados en cada sección.
+4. Para cambiar parámetros (frecuencia, amplitud, ruido), modificar las variables correspondientes en cada bloque.
+
+## Resultados
+- Visualización de señales en tiempo y frecuencia
+- Comparación de señal original, modulada, atenuada y con ruido
+- Recuperación de la señal de mensaje usando demodulación por envolvente
+
+## Notas
+- Todos los bloques incluyen comentarios explicativos para facilitar la comprensión.
+- Se puede usar como referencia para análisis de modulación AM en clase o proyectos de señales y sistemas.
